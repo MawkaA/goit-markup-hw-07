@@ -79,7 +79,7 @@ img {
 
 
 /*----------------------------Хедер--------------------------------------- */
-
+/* 
 .header{ 
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ECECEC;
@@ -210,8 +210,6 @@ img {
 }
 
 
-/*---------------------Logo  (2 для хедера, 3 для футера)--------------------------*/
-
 .logo {
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
@@ -229,20 +227,20 @@ img {
 
 .logo3 { 
     color: var(--primary-white-color);
-}
+} */
 
 /*--------------------------------INDEX контент --------------------*/
-
+/* 
 .main {
     margin: 0 auto;
     padding: 0;
     height: auto;
     display: block;
-}
+} */
 
 /*--------------------------------INDEX качества компании hero section 1----------------------------------- */
 
-.hero {
+/* .hero {
     background-color: var(--primary-bgcolor);
     height: auto;
     margin:0 auto;
@@ -279,10 +277,10 @@ img {
     margin: 0 auto;
     margin-bottom: 30px;
 
-}
+} */
 
 /* -------------------------------INDEX btn modal window---------------- */
-
+/* 
 .hero-btn {
     font-family: inherit;
     font-weight: bold;
@@ -550,11 +548,11 @@ top: 4px;
     border-radius: 4px;
     border: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0,0, 0.15);
-}
+} */
 
 /* ---------------------------about section2----------------- */
 
-.about {
+/* .about {
     background-color: var(--primary-white-color);
     height: auto;
     margin: 0 auto;
@@ -620,7 +618,7 @@ top: 4px;
     line-height: 1.7;
     letter-spacing: 0.03em; 
     font-weight: 400; 
-}
+} */
 
 
 /*--------------------------INDEX section3 описание услуг-----------------------*/
@@ -892,7 +890,7 @@ top: 4px;
 
 /*------------------------------------FOOTER-----------------------*/
 
-.footer {
+/* .footer {
     background-color: var(--primary-bgcolor);
     height: auto;
     margin: 0 auto;
@@ -1109,7 +1107,7 @@ top: 4px;
     width: 24px;
     margin-left: 10px;
     padding: 0;
-}
+} */
 /*----------------------------PORTFOLIO контент----------------------------------*/
 
 .portfolio {
