@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="webstudio create website for business"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body >
+    
+<!-- Header  такой же как на главной странице
+Добавить ссылки в навигацию-->
+
+    <header class="header">
+        <div class="container header-box">
+            <a class="logo" href="./index.html">Web<span class="logo2">Studio</span></a>
+            <nav class="menu">
+                <ul class="menu-nav">
+                    <li><a class="header-list " href="./index.html">Студия</a></li>
+                    <li><a class="header-list active" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="header-list" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-contacts">
+                <li><a class="header-list contact1 " href="mailto:info@devstudio.com">
+                        <svg class="email" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope">
+                            </use>
+                        </svg>info@devstudio.com</a></li>
+                <li><a class="header-list contact1 " href="tel:+380961111111">
+                        <svg class="phone" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+<!--основной контент-->
+
+    <main class="main">
+
+<!--кнопки фильтры-->
+
+        <section class="section portfolio">
+            <div class="container portfolio-box">
+            <ul class="list portfolio-btn">
+                <li>
+                    <button class="portfolio-btn-filter" type="button">Все</button>
+                </li>
+                <li>
+                    <button class="portfolio-btn-filter web" type="button">Веб-сайты</button> 
+                </li>
+                <li>
+                    <button class="portfolio-btn-filter" type="button">Приложения</button>
+                </li>
+                <li>
+                    <button class="portfolio-btn-filter" type="button">Дизайн</button>
+                </li>
+                <li>
+                    <button  class="portfolio-btn-filter" type="button">Маркетинг</button> 
+                </li>
+            </ul>
+
+<!--Картинки проэктов с подписями-->
+
+            <ul class="list portfolio-items">
+                <li>
+                    <div class="items-img-box">
+                        <img class="items-img" src="./images/8.jpg" alt="открытый ноутбук с профайлами 3х людей" 
+                        width="370" height="294"> 
+                        <div class="items-img-overlay">
+                            <p>Технокряк это современная площадка распространения коронавируса.
+                            Компании используют эту платформу для цифрового
+                            шпионажа и атак на защищённые сервера конкурентов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2  class="portfolio-heading">Технокряк</h2> 
+                        <p class="description portfolio-description">Веб-сайт</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/9.jpg" alt="два баскедболиста с мячем" width="370" height="294">
+                        <div class="items-img-overlay">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading"> Постер New Orlean vs Golden Star</h2> 
+                        <p class="description portfolio-description">Дизайн</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/10.jpg" alt="рыба" width="370" height="294">
+                        <div class="items-img-overlay">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading"> Ресторан Seafood</h2> 
+                        <p class="description portfolio-description">Портфолижение</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/11.jpg" alt="наушники" width="370" height="294"> 
+                        <div class="items-img-overlay">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading">Проект  Prime</h2> 
+                        <p class="description portfolio-description">Маркетинг</p> 
+                    </div>    
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/12.jpg" alt="две коробки" width="370" height="294">
+                        <div class="items-img-overlay">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading">Проект Boxes</h2>
+                        <p class="description portfolio-description  "> Приложение</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/13.jpg" alt="монитор компьютера" width="370" height="294">
+                        <div class="items-img-overlay">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading">Inspiration has no Borders</h2> 
+                        <p class="description portfolio-description">Веб-сайт</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/14.jpg" alt="открытая книга" width="370" height="294">
+                        <div class="items-img-overlay"> 
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading">Издание Limited Edition</h2> 
+                        <p class="description portfolio-description">Дизайн</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/15.jpg" alt="этикетка" width="370" height="294">
+                        <div class="items-img-overlay">
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading">Проект LAB</h2> 
+                        <p class="description portfolio-description">Маркетинг</p> 
+                    </div>
+                </li>
+                <li>
+                    <div class="items-img-box">
+                        <img src="./images/16.jpg" alt="руки печатают на ноутбуке" width="370" height="294"> 
+                        <div class="items-img-overlay">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="items-sign">
+                        <h2 class="portfolio-heading">Growing Business</h2> 
+                        <p class="description portfolio-description">Приложение</p> 
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </section>
+    </main>
+
+<!--футер, такой же как и на главной стрице-->
+
+    <footer class="footer">
+        <div class="container footer-main-list">
+            <div class="footer-box-adress">
+                <a class="logo logo-footer" href="./index.html">Web<span class="logo3">Studio</span> </a>
+                <address class="footer-address">
+                    <ul class="footer-list">
+                        <li>
+                            <a class="footer-link"
+                                href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4269006,30.5400176,16.75z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">
+                                г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li>
+                            <a class="footer-link footer-contact" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li>
+                            <a class="footer-link footer-contact" href="tel:0991111111">099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-social-link">
+                <h3 class="footer-header">присоединяйтесь</h3>
+                <ul class="list social">
+                    <li><a href="#" class="social-link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram2"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="social-link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-twit2"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="social-link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-fb2"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="#" class="social-link">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="footer-form-box">
+                <h3 class="footer-form-header">
+                    подпишитесь на рассылку </h3>
+                <form class="footer-form">
+                    <label class="footer-form-input">
+                        <input type="email" name="email" class="footer-input" placeholder="E-mail" />
+                    </label>
+                    <button type="submit" class="footer-btn">
+                        <div class="container-btn">
+                            <span>подписаться</span>
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-subsciption"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
