@@ -1,12 +1,4 @@
-// base
-@import './base/reset'
+body {
+    color: blue;
+}
 
-// components
-@import './components/buttons'
-
-// layout
-@import './layout/header'
-@import './layout/footer'
-@import './layout/hero'
-@import './layout/modal'
-@import './layout/about'
