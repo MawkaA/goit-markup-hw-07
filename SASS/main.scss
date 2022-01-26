@@ -1,4 +1,18 @@
-body {
-    color: blue;
-}
+// base
+@import './base/reset';
+// component
+@import './components/logo';
+@import './components/buttons';
+// layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/modal';
+@import './layout/about';
+@import './layout/trades';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+// utils
+@import './utils/variables';
 

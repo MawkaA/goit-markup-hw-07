@@ -1,0 +1,67 @@
+.trades {
+    background-color: var(--primary-white-color);
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding-top:0;
+}
+
+.trades-box {
+    margin: 0 auto;
+}
+
+.trades-heading {
+    font-size: 36px;
+    line-height: 1.16;
+    color: inherit;
+    margin: 0 auto 50px;
+    text-align: center;
+
+}
+
+.trades-list{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.trades-list li:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.trades-img {
+    display: block;
+    max-width: 100%;
+    height: 294px;
+}
+
+
+.trades-list li {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.trade-img-box {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.trade-img-box > p {
+    position: absolute;
+    top: 224px;
+    margin: 0;
+    text-align: center;
+    padding-top: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 370px;
+    
+
+    font-family: 'Roboto'sans-serif;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}

@@ -1,0 +1,112 @@
+.team {
+    background-color: var(--tertiary-bgcolor);
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.team-box {
+    margin: 0 auto;
+    
+}
+
+.team-heading{
+    font-size: 36px;
+    line-height: 1.16;
+    color: inherit;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-list {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.team-list .team-list-hero{
+    padding: 0;
+    background-color: var(--primary-white-color);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.team-list-hero {
+    display: block;
+    max-width:270px
+}
+
+.team-list .team-list-hero:not(:last-of-type){
+    margin-right:30px;
+}
+
+.team-name {
+    display: block;
+    padding:30px ;
+    text-align: center;
+}
+.team-subheading {
+    font-style: medium;
+    font-size: 16px;
+    line-height: 1.18;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.team-description{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    
+}
+
+.team-link-list {
+    display: flex;
+    margin-top:16px ;
+    padding: 0;
+}
+
+.team-link-list li:not(:last-child){
+    margin-right: 10px; 
+}
+
+.team-link-list li{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-link { 
+    margin:0 auto;
+    padding: 0;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover,
+.team-link:focus,
+.team-link:active {
+    background-color: var(--accent-color);
+}
+
+.team-social-icon {
+    fill: #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover .team-social-icon,
+.team-link:focus .team-social-icon,
+.team-link:active .team-social-icon {
+    fill: var(--primary-white-color);
+}
