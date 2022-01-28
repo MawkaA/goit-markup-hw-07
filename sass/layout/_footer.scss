@@ -68,7 +68,7 @@
     padding: 0;
 }
 
-.footer__title {
+.footer__title_sociallink {
     font-family:'Roboto',sans-serif;
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
@@ -130,12 +130,10 @@
     flex-direction: row;
 }
 
-.footer__subcontainer__title {
+.footer__title_form {
+    @include font(14px, 0.87, 700, 0.03em );
     font-family:'Roboto',sans-serif;
-    font-weight: 700;
     color: rgba(255, 255, 255, 1);
-    font-size: 14px;
-    line-height: 0.87;
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -162,21 +160,15 @@
     background-color: #2F303A;
     margin-right:12px;
     padding-left: 16px;
+    @include font(16px, 1.25, 700, 0.03em );
     font-family:'Roboto',sans-serif;
-    font-weight: 700;
     color: var(--primary-white-color);
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
 }
 
 .footer__input::placeholder {
+    @include font(16px, 1.25, 400, 0.03em );
     font-family:'Roboto',sans-serif;
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
 }
 
 .footer__btn {
@@ -184,11 +176,8 @@
     flex-direction: row;
     margin:0 auto;
     padding:10px 28px;
+    @include font(16px, 0.53, 700, 0.06em );
     font-family:'Roboto',sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 0.53;
-    letter-spacing: 0.06em;
     text-transform:capitalize;
     color: var(--primary-white-color);
     background-color: var(--accent-color);

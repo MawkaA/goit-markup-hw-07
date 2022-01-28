@@ -45,21 +45,14 @@
 
 
 .about__list__title {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 1.14, 700, 0.03em );
     color: inherit;
     text-transform: uppercase;
-    font-weight: 700;
     margin-bottom: 10px;
 }
 
 
 .about__list__subtitle {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em; 
-    font-weight: 400; 
+    @include font(14px, 1.7, 400, 0.03em );
     color: var(--secondary-text-color);
-    font-weight: 400;
-    
 } 

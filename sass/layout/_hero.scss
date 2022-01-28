@@ -26,23 +26,16 @@
 
 .hero__title {
     color: var(--primary-white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(44px, 1.36, 900, 0.06em );
     text-transform:uppercase;
     text-align: center;
-    letter-spacing: 0.06em;
     margin: 0 auto;
     margin-bottom: 30px;
-
-} 
+}
 
 .hero__btn_backdrop{
+    @include font(16px, 1.87,700,0.06em);
     font-family: inherit;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     text-align: center;
@@ -55,5 +48,4 @@
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
-    
 }
