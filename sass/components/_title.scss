@@ -61,7 +61,7 @@ ul {
     text-align: center;
 }
 
-.team-subheading {
+.team__list__title {
     font-style: medium;
     font-size: 16px;
     line-height: 1.18;
@@ -69,7 +69,13 @@ ul {
     margin-bottom: 10px;
 }
 
-.clients-heading {
+.team__list__subtitle {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    
+}
+
+.clients__title {
     font-family: 'Roboto',sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -79,7 +85,7 @@ ul {
     margin-bottom: 50px;
 }
 
-.footer-header {
+.footer__title_sociallink {
     font-family:'Roboto',sans-serif;
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
@@ -92,7 +98,7 @@ ul {
     margin-left: 0;
 }
 
-.footer-form-header {
+.footer__title_form {
     font-family:'Roboto',sans-serif;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
@@ -105,9 +111,15 @@ ul {
     margin-left: 0; 
 }
 
-.portfolio-heading {
+.grid__item__title {
     color: inherit;
     font-size: 18px;
     line-height: 2;
     margin-bottom: 4px;
+}
+
+.grid__item__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
 }

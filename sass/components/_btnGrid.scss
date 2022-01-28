@@ -1,5 +1,4 @@
-
-.portfolio-btn { 
+.portfolio__list_btn { 
     padding:0;
     display: flex;
     flex-direction: row;
@@ -8,11 +7,11 @@
     
 }
 
-.portfolio-btn li:not(:last-of-type) {
+.portfolio__list_btn .portfolio__list__item:not(:last-of-type) {
     padding-right: 8px;
 }
 
-.portfolio-btn-filter {
+.portfolio__btn {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -31,9 +30,9 @@
 
 
 
-.portfolio-btn-filter:hover,
-.portfolio-btn-filter:focus,
-.portfolio-btn-filter:active {
+.portfolio__btn:hover,
+.portfolio__btn:focus,
+.portfolio__btn:active {
     background-color: var(--accent-color);
     color:var(--primary-white-color);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
