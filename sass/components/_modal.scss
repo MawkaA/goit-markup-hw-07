@@ -37,7 +37,7 @@
     transform: translate(-50%, -50%); 
 }
 
-.close-hero-btn {
+.moda__btn_close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -54,12 +54,12 @@
     
 }
 
-.close-hero-btn:hover,
-.close-hero-btn:hover svg {
+.moda__btn_close:hover,
+.moda__btn_close:hover svg {
     cursor: pointer;
 } 
 
-.modal-header {
+.modal__title {
     margin:0 0 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -71,7 +71,25 @@
     text-align: center ;
 }
 
-.modal-form-label {
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.modal__form .form__container_name,
+.modal__form .form__container_tel,
+.modal__form .form__container_email,
+.modal__form .form__container_comment {
+    padding: 0;
+    margin:0 0 10px;
+    -webkit-text-size-adjust: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal__form__label {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.16;
@@ -82,22 +100,7 @@
     margin-bottom: 4px;
 }
 
-.modal-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.modal-form div:not(:last-of-type) {
-    padding: 0;
-    margin:0 0 10px;
-    -webkit-text-size-adjust: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.modal-input {
+.modal__form__input {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.16;
@@ -115,19 +118,19 @@
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus,
-.modal-input:hover,
-.modal-textarea:focus,
-.modal-textarea:hover {
+.modal__form__input:focus,
+.modal__form__input:hover,
+.modal__form__textarea:focus,
+.modal__form__textarea:hover {
     border-color: var(--accent-color);
 }
 
-.modal-input:focus + .modal-icon,
-.modal-input:hover + .modal-icon {
+.modal__form__input:focus + .modal__form__icon,
+.modal__form__input:hover + .modal__form__icon {
     fill: var(--accent-color);
 }
 
-.modal-textarea {
+.modal__form__textarea {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -136,7 +139,7 @@
     border-radius: 4px;
     resize: none;
 }
-.modal-textarea::placeholder {
+.modal__form__textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.16;
@@ -146,9 +149,9 @@
     color: rgba(117,117,117,0.5);
 }
 
-.input-name-box .modal-icon,
-.input-email-box .modal-icon,
-.input-tel-box .modal-icon {
+.form__container_name .modal__form__icon,
+.form__container_tel .modal__form__icon,
+.form__container_email .modal__form__icon {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -159,7 +162,7 @@
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check-box {
+.form_container_check {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -167,7 +170,7 @@
     margin: 15px 0 0;
     position: relative;
 }
-.modal-check-box p {
+.form_container_check .form__agreement {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.7;
@@ -179,20 +182,19 @@
     margin-left: 8px;
 }
 
-.modal-check-box a {
+.form__agreement .agreement__link {
     color: var(--accent-color);
 }
-.checkbox-modal {
+.modal__form__input_check {
     margin: 0;
     padding: 0; 
     width: 16px;
     height: 15px;
 }
 
-.modal-check-label span {
+.modal__form__label_check .modal__form__icon-box_check {
 width: 16px;
 height: 15px;
-border: rgba(33, 33, 33, 1) solid;
 border-radius:2px;
 display: flex;
 align-items: center;
@@ -202,7 +204,7 @@ left: 0;
 top: 4px;
 }
 
-.icon-checkbox {
+.modal__form__icon_check {
     fill: transparent;
     width: 16px;
     height: 15px;
@@ -210,21 +212,21 @@ top: 4px;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-modal:checked {
+.modal__form__input_check:checked {
     border: transparent;
 }
 
-.checkbox-modal:checked +.modal-check-label>span {
+.modal__form__input_check:checked +.modal__form__label_check>.modal__form__icon-box_check {
     background-color: var(--accent-color);
     border: none;
     
 }
 
-.checkbox-modal:checked +.modal-check-label .icon-checkbox {
+.modal__form__input_check:checked +.modal__form__label_check .modal__form__icon_check {
     fill: var(--primary-white-color);
 }
 
-.modal-submit {
+.modal__form__btn_submit {
     display: flex;
     justify-content: center;
     align-items: center;

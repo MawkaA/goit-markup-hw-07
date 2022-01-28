@@ -9,7 +9,7 @@ ul {
     margin:0 auto;
 }
 
-.hero-heading {
+.hero__title {
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -22,7 +22,7 @@ ul {
 
 }
 
-.modal-header {
+.modal__title {
     margin:0 0 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -34,7 +34,7 @@ ul {
     text-align: center ;
 }
 
-.about-heading {
+.about__list__title {
     font-size: 14px;
     line-height: 1.14;
     color: inherit;
@@ -43,7 +43,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.trades-heading {
+.trades__title {
     font-size: 36px;
     line-height: 1.16;
     color: inherit;
@@ -52,7 +52,7 @@ ul {
 
 }
 
-.team-heading{
+.team__title{
     font-size: 36px;
     line-height: 1.16;
     color: inherit;

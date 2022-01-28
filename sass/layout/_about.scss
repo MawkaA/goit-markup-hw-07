@@ -4,12 +4,12 @@
     margin: 0 auto;
 }
 
-.about-box {
+.about__container {
     display: flex;
     align-items: stretch;
 }
 
-.about-list {
+.about__list {
     margin:0 auto;
     padding: 0;
     display: flex;
@@ -18,16 +18,16 @@
     align-content: flex-start;
 }
 
-.about-list li {
+.about__list .about__list__item {
     width: 270px;
     height: auto;
 }
 
-.about-list li:not(:last-of-type) {
+.about__list .about__list__item:not(:last-of-type) {
     margin-right: 30px;
 }
 
-.about-icon-box {
+.about__list__container {
     margin-bottom: 30px;
     width:270px;
     height: 120px;
@@ -37,14 +37,14 @@
     background-color: rgba(245, 244, 250, 1);
 }
 
-.about-icon {
+.about__list__icon {
     object-position: center;
     object-fit: contain;
     position: 50% 50%;
 }
 
 
-.about-heading {
+.about__list__title {
     font-size: 14px;
     line-height: 1.14;
     color: inherit;
@@ -53,15 +53,13 @@
     margin-bottom: 10px;
 }
 
-.description {
-    color: var(--secondary-text-color);
-    font-weight: 400;
-    
-}
 
-.about-description {
+.about__list__subtitle {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em; 
     font-weight: 400; 
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    
 } 

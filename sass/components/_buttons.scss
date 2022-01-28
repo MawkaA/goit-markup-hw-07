@@ -1,4 +1,4 @@
-.hero-btn {
+.hero__btn_backdrop {
     font-family: inherit;
     font-weight: bold;
     font-size: 16px;
@@ -19,7 +19,7 @@
     
 }
 
-.close-hero-btn {
+.moda__btn_close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -36,12 +36,12 @@
     
 }
 
-.close-hero-btn:hover,
-.close-hero-btn:hover svg {
+.moda__btn_close:hover,
+.moda__btn_close:hover svg {
     cursor: pointer;
 } 
 
-.modal-submit {
+.modal__form__btn_submit {
     display: flex;
     justify-content: center;
     align-items: center;
