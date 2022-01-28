@@ -1,0 +1,113 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin:0 auto;
+}
+
+.hero-heading {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+.modal-header {
+    margin:0 0 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    font-size: 20px;
+    color: #212121;
+    letter-spacing: 0.03em;
+    -webkit-text-size-adjust: 100%;
+    text-align: center ;
+}
+
+.about-heading {
+    font-size: 14px;
+    line-height: 1.14;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.trades-heading {
+    font-size: 36px;
+    line-height: 1.16;
+    color: inherit;
+    margin: 0 auto 50px;
+    text-align: center;
+
+}
+
+.team-heading{
+    font-size: 36px;
+    line-height: 1.16;
+    color: inherit;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-subheading {
+    font-style: medium;
+    font-size: 16px;
+    line-height: 1.18;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.clients-heading {
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: inherit;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.footer-header {
+    font-family:'Roboto',sans-serif;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 0;
+}
+
+.footer-form-header {
+    font-family:'Roboto',sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 0; 
+}
+
+.portfolio-heading {
+    color: inherit;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 4px;
+}

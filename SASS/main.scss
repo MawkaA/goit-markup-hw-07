@@ -1,14 +1,16 @@
 // base
 @import './base/reset';
+@import './base/common';
 // component
 @import './components/logo';
 @import './components/buttons';
 @import './components/btnGrid';
 @import './components/gridPic';
+@import './components/modal';
+@import './components/title';
 // layout
 @import './layout/header';
 @import './layout/hero';
-@import './layout/modal';
 @import './layout/about';
 @import './layout/trades';
 @import './layout/team';
@@ -17,4 +19,6 @@
 @import './layout/portfolio';
 // utils
 @import './utils/variables';
-
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/placeholders'

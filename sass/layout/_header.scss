@@ -7,7 +7,7 @@
 
 }
 
-.header-box {
+.header__container {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
 }
 
 
-.menu-nav {
+.site-list {
     list-style-type:none;
     display: flex;
     flex-direction: row;
@@ -25,12 +25,12 @@
     padding-left: 0;
 }
 
-.menu-nav li {
+.site-list .site-list__item {
     margin-right: 50px;
     
 }
 
-.header-list { 
+.site-list__item{ 
     color: inherit;
     font-weight: 500;
     font-size: 14px;
@@ -41,33 +41,33 @@
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list:hover, 
-.header-list:focus,
-.header-list.active { 
+.site-list__item:hover, 
+.site-list__item:focus,
+.site-list__item.active { 
     color: var(--accent-color);
     
 }
 
-.header-list:hover svg {
+.site-list__item:hover svg {
     fill: var(--accent-color);
     
 }
 
-.header-list:focus svg {
+.site-list__item:focus svg {
     fill: var(--accent-color);
 }
 
-.header-list:active svg {
+.site-list__item:active svg {
     fill: var(--accent-color);
 }
 
-.header-list.active {
+.site-list__item.active {
     position: relative;
     text-decoration: none;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-list.active::after {
+.site-list__item.active::after {
     position: absolute;
     content: '';
     display:inline-block;
@@ -79,7 +79,7 @@
     border-radius: 2px;
 }
 
-.header-contacts {
+.connect {
     margin-left: 186px;
     padding: 0;
     list-style-type:none;
@@ -89,21 +89,21 @@
     align-content: flex-start;
 }
 
-.header-contacts li {
+.connect .connect__contact {
     margin-left: 50px;
     display: flex;
     align-items: center;
 }
 
 
-.contact1 {
+.connect__contact {
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
 }
 
 
-.email {
+.connect__icon_email {
     display: inline-block;
     object-fit: contain;
     margin-right:10px;
@@ -116,7 +116,7 @@
 
 
 
-.phone {
+.connect__icon_phone {
     display: inline-block;
     object-fit: contain;
     margin-right:10px;
