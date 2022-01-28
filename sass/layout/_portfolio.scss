@@ -6,13 +6,22 @@
 
 }
 
+@mixin font($fz, $lh, $fw, $ls) {
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+    letter-spacing: $ls; 
+}
+
 .portfolio__container {
     margin: 0 auto;
 }
 
 // btns
-
 .portfolio__list_btn { 
+    & .portfolio__list__item:not(:last-of-type) {
+    padding-right: 8px;
+    };
     padding:0;
     display: flex;
     flex-direction: row;
@@ -21,9 +30,6 @@
     
 }
 
-.portfolio__list_btn .portfolio__list__item:not(:last-of-type) {
-    padding-right: 8px;
-}
 
 .portfolio__btn {
     font-family: inherit;
@@ -40,23 +46,19 @@
     padding: 6px 22px;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-.portfolio__btn:hover,
-.portfolio__btn:focus,
-.portfolio__btn:active {
+    &:hover,
+    &:focus,
+    &:active {
     background-color: var(--accent-color);
     color:var(--primary-white-color);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
         0 1px 2px 0 rgba(0, 0, 0, 0.08),
         0 3px 1px 0 rgba(0, 0, 0, 0.01);
-    
+    };
 }
 
-// grid
 
+// grid
 .portfolio__grid {
     margin: 0 auto;
     padding: 0;
@@ -65,9 +67,7 @@
     align-content: stretch;
     flex-wrap: wrap;
     width: inherit;
-}
-
-.portfolio__grid .portfolio__grid__item {
+    & .portfolio__grid__item {
     background-color: var(--primary-white-color);
     margin:0 30px 30px 0;
     padding: 0 auto;
@@ -75,14 +75,17 @@
     height: 404px;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__grid .portfolio__grid__item:hover,
-.portfolio__grid .portfolio__grid__item:focus {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+        &:hover,
+        &:focus {
+        box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
         0 4px 4px 0 rgba(0, 0, 0, 0.06),
         0 1px 1px 0 rgba(0,0,0, 0.12);
-    
+        };
+    };
+    & .portfolio__grid__item:hover .grid__overlay {
+    transform: translateY(0);
+    };
+
 }
 
 .grid__item__comtainer_img {
@@ -90,11 +93,6 @@
     overflow: hidden;
     width: 370px;
     height: 294px;
-}
-
-.portfolio__grid  .portfolio__grid__item:hover .grid__overlay {
-    transform: translateY(0);
-    
 }
 
 .grid__overlay {
@@ -106,9 +104,7 @@
     transform: translateY(100%);
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.grid__overlay .grid__overlay__title {
+    & .grid__overlay__title {
     font-family: 'Roboto'sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -118,8 +114,8 @@
     margin: 0 auto;
     text-align: left;
     padding: 63px 24px;
-}
-
+    };
+}  
 
 .grid__item__description {
     margin: 0 auto;

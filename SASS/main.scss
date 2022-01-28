@@ -1,3 +1,8 @@
+// utils
+@import './utils/variables';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
 // base
 @import './base/reset';
 @import './base/common';
@@ -17,8 +22,3 @@
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/portfolio';
-// utils
-@import './utils/variables';
-@import './utils/hidden';
-@import './utils/mixins';
-@import './utils/placeholders'

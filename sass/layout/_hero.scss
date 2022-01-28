@@ -4,6 +4,12 @@
     margin:0 auto;
     padding:200px 0;
 }
+@mixin font($fz, $lh, $fw, $ls) {
+   font-size: $fz;
+   line-height: $lh;
+   font-weight: $fw;
+   letter-spacing: $ls; 
+}
 
 .hero_background {
     max-width: 1600px;

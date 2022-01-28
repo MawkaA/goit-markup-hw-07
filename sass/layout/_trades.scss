@@ -10,9 +10,8 @@
     margin: 0 auto;
 }
 
-.trades__title{
-    font-size: 36px;
-    line-height: 1.16;
+.trades__title {
+    @include font(36px, 1.16, 700, 0.03em );
     color: inherit;
     margin: 0 auto 50px;
     text-align: center;
@@ -22,16 +21,14 @@
 .trades__list{
     margin: 0 auto;
     padding: 0;
-}
-
-.trades__list .trades__list__item:not(:last-of-type) {
+    & .trades__list__item:not(:last-of-type) {
     margin-right: 30px;
-}
-
-.trades__list .trades__list__item {
+    }
+    & .trades__list__item {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    }
 }
 
 .trades__img {
@@ -44,9 +41,8 @@
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-}
 
-.trade__list__container > .trades__list__subtitle {
+    & > .trades__list__subtitle {
     position: absolute;
     top: 224px;
     margin: 0;
@@ -56,11 +52,9 @@
     height: 70px;
     width: 370px;
     
-
+    @include font(14px, 1.14, 700, 0.03em );
     font-family: 'Roboto'sans-serif;
-    font-size: 14px;
-    line-height: 1.14;
     color: var(--primary-white-color);
     text-transform: uppercase;
-    font-weight: 700;
+    }    
 }

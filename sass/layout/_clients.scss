@@ -1,3 +1,10 @@
+@mixin font($fz, $lh, $fw, $ls) {
+   font-size: $fz;
+   line-height: $lh;
+   font-weight: $fw;
+   letter-spacing: $ls; 
+} 
+
 .clients {
     background-color: var(--primary-white-color);
     height: auto;
@@ -23,19 +30,18 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    
-}
 
-.clients__list .clients__list__item {
+    & .clients__list__item {
     width: 170px;
     height: 92px;
     cursor: pointer;
     margin: 0 auto;
     padding: 0;
-}
-
-.clients__list .clients__list__item :not(:last-of-type) {
+    };
+    
+    & .clients__list__item :not(:last-of-type) {
     margin-right: 30px;
+    };
 }
 
 .clients__link {
@@ -49,24 +55,18 @@
     height: 92px;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.clients__link:focus,
-.clients__link:active,
-.clients__link:hover {
+    
+    &:focus,
+    &:active;
+    &:hover {
     border-color: var(--accent-color);
     fill: var(--accent-color);
-    
-}
+    };
 
-.clients__link:hover .client__icon {
+    &:hover .client__icon,
+    &:focus  .client__icon {
     fill: var(--accent-color);
-    
-}
-.clients__link:focus .client__icon {
-    fill: var(--accent-color);
-    
+    };
 }
 
 .client__icon {

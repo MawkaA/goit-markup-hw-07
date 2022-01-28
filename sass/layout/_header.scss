@@ -1,3 +1,10 @@
+@mixin font($fz, $lh, $fw, $ls) {
+   font-size: $fz;
+   line-height: $lh;
+   font-weight: $fw;
+   letter-spacing: $ls; 
+}
+
 .header { 
     background-color: var(--primary-white-color);
     border-bottom: 1px solid #ECECEC;
@@ -23,11 +30,10 @@
     align-items: baseline;
     margin: 0 auto;
     padding-left: 0;
-}
 
-.site-list .site-list__item {
+    & .site-list__item {
     margin-right: 50px;
-    
+    };
 }
 
 .site-list__item{ 
@@ -39,35 +45,28 @@
     text-decoration: none;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.site-list__item:hover, 
-.site-list__item:focus,
-.site-list__item.active { 
-    color: var(--accent-color);
-    
-}
+    &:hover,
+    &:focus,
+    &.active {
+        color: var(--accent-color);
+    };
 
-.site-list__item:hover svg {
+    &:hover svg,
+    &:focus svg,
+    &:active svg {
     fill: var(--accent-color);
-    
+    };
 }
 
-.site-list__item:focus svg {
-    fill: var(--accent-color);
-}
-
-.site-list__item:active svg {
-    fill: var(--accent-color);
-}
 
 .site-list__item.active {
     position: relative;
     text-decoration: none;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-.site-list__item.active::after {
+
+    &::after {
     position: absolute;
     content: '';
     display:inline-block;
@@ -76,7 +75,9 @@
     background: var(--accent-color);
     left: -1px;
     bottom: -28px;
-    border-radius: 2px;
+    border-radius: 2px;  
+    };
+
 }
 
 .connect {
@@ -87,20 +88,14 @@
     flex-direction: row;
     align-items: baseline;
     align-content: flex-start;
-}
 
-.connect .connect__contact {
-    margin-left: 50px;
+    & .connect__contact { margin-left: 50px;
     display: flex;
     align-items: center;
-}
-
-
-.connect__contact {
     color: var(--secondary-text-color);
-    display: flex;
-    align-items: center;
+    };
 }
+
 
 
 .connect__icon_email {
@@ -130,16 +125,16 @@
 
 .logo {
     color: var(--accent-color);
-    @include font(26px, 1.19, 700, 0.03em );
+    @include font(26px, 1.19, 700, 0.03em);
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     margin-right: 93px;
 }
 
-.logo2 {
+.logo_header {
     color: var(--primary-text-color);
 }
 
-.logo3 { 
+.logo_footer { 
     color: var(--primary-white-color);
 }

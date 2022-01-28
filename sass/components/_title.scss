@@ -8,6 +8,12 @@ p,
 ul {
     margin:0 auto;
 }
+@mixin font($fz, $lh, $fw, $ls) {
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+    letter-spacing: $ls; 
+}
 
 .hero__title {
     color: var(--primary-white-color);
